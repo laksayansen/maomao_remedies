@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Apothecary Diaries - Maomao Remedies</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="hero">
+        <h1>The Apothecary Diaries</h1>
+        <p class="sub">Maomao's Remedies: every choice changes the result</p>
+        <p id="greeting">Good day, visitor.</p>
+    </header>
+
+    <main>
+
+        <section class="content">
+            <h2>The Herb Cabinet</h2>
+            <p>Click a drawer to put that herb in the bowl. Click it again to take it out. When you are ready, brew the remedy.</p>
+
+            <div class="cabinet">
+                <button class="drawer" id="ginger" onmouseover="showHerb('ginger')" onmouseout="hideHerb()" onclick="toggleHerb('ginger')">ginger</button>
+                <button class="drawer" id="licorice" onmouseover="showHerb('licorice')" onmouseout="hideHerb()" onclick="toggleHerb('licorice')">licorice</button>
+                <button class="drawer" id="ginseng" onmouseover="showHerb('ginseng')" onmouseout="hideHerb()" onclick="toggleHerb('ginseng')">ginseng</button>
+                <button class="drawer" id="lily" onmouseover="showHerb('lily')" onmouseout="hideHerb()" onclick="toggleHerb('lily')">lily</button>
+            </div>
+
+            <p id="herbLabel">Hover over a drawer to read its label.</p>
+            <p id="bowl">In the bowl: nothing yet</p>
+
+            <div class="buttons">
+                <button onclick="brewRemedy()">Brew the remedy</button>
+                <button class="quiet" onclick="emptyBowl()">Empty the bowl</button>
+            </div>
+
+            <p id="brewResult" class="result">The patient is waiting.</p>
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
