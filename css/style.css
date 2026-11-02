@@ -81,6 +81,46 @@ button.drawer.chosen:hover {
 .result {
     font-size: 1.2rem;
     min-height: 2em;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.result.good {
+    background-color: #dfe9e2;
+    color: #2e5d4b;
+}
+
+.result.bad {
+    background-color: #f1dde3;
+    color: #7a2e4a;
+}
+
+.result.neutral {
+    background-color: #efe3c9;
+    color: #6b5a44;
+}
+
+#soup {
+    font-size: 64px;
+    transition: transform 0.3s;
+}
+
+.meter {
+    width: 70%;
+    max-width: 320px;
+    height: 16px;
+    margin: 0 auto;
+    background-color: #e9dfc8;
+    border: 2px solid #8a6e4b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#toleranceBar {
+    width: 0%;
+    height: 100%;
+    background-color: #2e5d4b;
+    transition: width 0.4s;
 }
 
 .buttons {
@@ -106,9 +146,34 @@ button:hover {
     background-color: #3f7a63;
 }
 
+button.quiet {
+    background-color: #f5ecd7;
+    color: #2e5d4b;
+    border: 2px solid #2e5d4b;
+}
+
+button.quiet:hover {
+    background-color: #dfe9e2;
+}
+
 button:focus-visible {
     outline: 3px solid #8a6e4b;
     outline-offset: 2px;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #6b5a44;
+}
+
+footer {
+    padding: 0 20px 30px;
+    font-size: 0.85rem;
+    color: #6b5a44;
+}
+
+footer p {
+    margin: 4px 0;
 }
 
 @media (max-width: 600px) {
