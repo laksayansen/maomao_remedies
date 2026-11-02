@@ -40,6 +40,26 @@
             <p id="brewResult" class="result">The patient is waiting.</p>
         </section>
 
+        <section class="content">
+            <h2>The Poison Taster</h2>
+            <p>A bowl of soup has arrived for a consort. Someone has to taste it first. Maomao's body remembers every taste.</p>
+
+            <div id="soup">🍵</div>
+
+            <p>Tolerance</p>
+            <div class="meter">
+                <div id="toleranceBar"></div>
+            </div>
+            <p id="tasteCount">Soups tasted today: 0</p>
+
+            <div class="buttons">
+                <button onclick="tasteSoup()">Taste the soup</button>
+                <button class="quiet" onclick="newDay()">Start a new day</button>
+            </div>
+
+            <p id="poisonResult" class="result">The soup is waiting.</p>
+        </section>
+
     </main>
     <script src="js/script.js"></script>
 </body>
